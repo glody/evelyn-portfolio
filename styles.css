@@ -1,0 +1,165 @@
+:root {
+  --bg: #faf8f5;
+  --bg-muted: #f0ebe4;
+  --text: #1c1917;
+  --text-soft: #57534e;
+  --accent: #7c6a58;
+  --accent-hover: #5c4f42;
+  --radius: 12px;
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  margin: 0.25rem 0 1rem;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  margin: 0 0 1.25rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+.hero {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(2rem, 5vw, 4rem);
+  max-width: 48rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--text-soft);
+  max-width: 28ch;
+  margin: 0 0 1.75rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  background: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.cta:hover {
+  color: var(--bg);
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.section {
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.section--muted {
+  background: var(--bg-muted);
+}
+
+.projects {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgb(28 25 23 / 6%);
+  border: 1px solid rgb(28 25 23 / 6%);
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.prose {
+  max-width: 42rem;
+  color: var(--text-soft);
+  margin: 0;
+}
+
+.footer {
+  padding: 2rem clamp(1.5rem, 5vw, 4rem) 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(28 25 23 / 8%);
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer-nav a {
+  font-weight: 600;
+}
