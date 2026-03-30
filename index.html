@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Evelyn — Portfolio</title>
+    <title>Evelyn — 作品集 Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,18 +14,23 @@
   </head>
   <body>
     <header class="hero">
-      <p class="eyebrow">Portfolio</p>
+      <p class="eyebrow">作品集 / Portfolio</p>
       <h1>Evelyn</h1>
-      <p class="tagline">
-        Product and visual designer shaping contemporary experiences through
-        culture, storytelling, and thoughtful making.
+      <p class="tagline bilingual">
+        <span class="bilingual__zh" lang="zh-CN">
+          以文化、叙事与审美为线索，探索当代产品与视觉设计的可能性。
+        </span>
+        <span class="bilingual__en">
+          Product and visual designer shaping contemporary experiences through
+          culture, storytelling, and thoughtful making.
+        </span>
       </p>
-      <a class="cta" href="#work">View work</a>
+      <a class="cta" href="#work">查看作品 / View Work</a>
     </header>
 
     <main>
       <section id="work" class="section">
-        <h2>Selected projects</h2>
+        <h2>精选项目 / Selected Projects</h2>
         <ul class="projects">
           <li class="card card--project">
             <figure class="project-card__media">
@@ -38,9 +43,19 @@
                 decoding="async"
               />
             </figure>
-            <h3 lang="zh-CN">「变」签</h3>
-            <p class="project-card__award" lang="zh-CN">
-              河南省大学生“行走河南，读懂中国”文创设计大赛荣获二等奖
+            <h3 class="bilingual">
+              <span class="bilingual__zh" lang="zh-CN">「变」签</span>
+              <span class="bilingual__en">"Bian" Notes</span>
+            </h3>
+            <p class="project-card__award bilingual">
+              <span class="bilingual__zh" lang="zh-CN">
+                河南省大学生“行走河南，读懂中国”文创设计大赛荣获二等奖
+              </span>
+              <span class="bilingual__en">
+                Second Prize, Henan Province University Student Cultural and
+                Creative Design Competition "Walk through Henan, Understand
+                China"
+              </span>
             </p>
           </li>
           <li class="card card--project">
@@ -54,30 +69,43 @@
                 decoding="async"
               />
             </figure>
-            <h3 lang="zh-CN">「忍冬」</h3>
-            <p class="project-card__award" lang="zh-CN">
-              河南文化创意设计第二节河南高校“龙龟杯”暨河洛礼品设计大赛荣获优秀奖
+            <h3 class="bilingual">
+              <span class="bilingual__zh" lang="zh-CN">「忍冬」</span>
+              <span class="bilingual__en">Honeysuckle</span>
+            </h3>
+            <p class="project-card__award bilingual">
+              <span class="bilingual__zh" lang="zh-CN">
+                河南文化创意设计第二节河南高校“龙龟杯”暨河洛礼品设计大赛荣获优秀奖
+              </span>
+              <span class="bilingual__en">
+                Excellence Award, Henan Cultural and Creative Design and the
+                Henan University "Longgui Cup" Heluo Gift Design Competition
+              </span>
             </p>
           </li>
         </ul>
       </section>
 
       <section id="about" class="section section--muted">
-        <h2>About</h2>
-        <p class="prose">
-          I am a designer focused on cultural and creative product design,
-          visual communication, and packaging concepts. My work explores how
-          local stories, traditional symbols, and contemporary aesthetics can
-          come together to create objects and experiences that feel both
-          meaningful and approachable.
+        <h2>关于我 / About</h2>
+        <p class="prose bilingual">
+          <span class="bilingual__zh" lang="zh-CN">
+            我专注于文化创意产品设计、视觉传达与包装设计，希望将地域故事、传统符号与当代审美结合，创造出兼具温度、表达力与实用性的作品。
+          </span>
+          <span class="bilingual__en">
+            I focus on cultural and creative product design, visual
+            communication, and packaging concepts. My work brings together
+            local stories, traditional symbols, and contemporary aesthetics to
+            create designs that feel meaningful, expressive, and approachable.
+          </span>
         </p>
       </section>
     </main>
 
     <footer class="footer">
       <p>© <span id="year"></span> Evelyn</p>
-      <nav class="footer-nav" aria-label="Contact">
-        <a href="mailto:hello@example.com">Email</a>
+      <nav class="footer-nav" aria-label="联系 Contact">
+        <a href="mailto:13663078537@163.com">邮箱 / Email</a>
         <a href="https://github.com/" rel="noopener noreferrer">GitHub</a>
       </nav>
     </footer>
